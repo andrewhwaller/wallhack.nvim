@@ -24,7 +24,7 @@ A vibrant, high-contrast Neovim colorscheme with fluorescent accents on a pure b
 
 ```lua
 {
-  'yourusername/wallhack.nvim',
+  'andrewhwaller/wallhack.nvim',
   priority = 1000,
   config = function()
     require('wallhack').setup({
@@ -39,7 +39,7 @@ A vibrant, high-contrast Neovim colorscheme with fluorescent accents on a pure b
 
 ```lua
 use {
-  'yourusername/wallhack.nvim',
+  'andrewhwaller/wallhack.nvim',
   config = function()
     require('wallhack').setup()
     vim.cmd.colorscheme('wallhack')
