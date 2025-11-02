@@ -21,24 +21,24 @@ M.colors = {
   blue = "#5F7E97",
   cyan = "#5E8D87",
   magenta = "#7E6C88",
-  yellow = "#B89860",
-  olive = "#878760",
+  yellow = "#D4A574",
+  olive = "#B89A5F",
   gray = "#888888",
   dark_gray = "#2C2C2C",
 
   -- Semantic UI colors
-  bg = "#1E1E1E",
-  fg = "#D4D4D4",
+  bg = "#0D0D0D",
+  fg = "#E5C07B",
 
   -- Editor elements
-  bg_highlight = "#2C2C2C",
-  bg_visual = "#3E4451",
-  fg_visual = "#D4D4D4",
+  bg_highlight = "#1A1A1A",
+  bg_visual = "#2A2A2A",
+  fg_visual = "#E5C07B",
 
   -- Gutter & UI
   line_nr = "#5C6370",
   cursor_line_nr = "#E5C07B",
-  cursor = "#98C379",
+  cursor = "#D19A66",
 
   -- Git colors
   git_add = "#98C379",
@@ -50,7 +50,7 @@ M.colors = {
   error = "#E06C75",
   warning = "#E5C07B",
   info = "#61AFEF",
-  hint = "#98C379",
+  hint = "#D19A66",
 
   -- Syntax highlighting
   keyword = "#C678DD",      -- Vibrant purple for keywords
@@ -59,21 +59,21 @@ M.colors = {
   number = "#D19A66",       -- Warm orange for numbers
   comment = "#5C6370",      -- Balanced gray for comments
   type = "#E5C07B",         -- Golden yellow for types
-  variable = "#E06C75",     -- Coral red for variables
-  operator = "#ABB2BF",     -- Light gray for operators
+  variable = "#E5C07B",     -- Golden yellow for variables
+  operator = "#D4A574",     -- Amber for operators
   constant = "#D19A66",     -- Orange for constants
-  delimiter = "#ABB2BF",    -- Light gray for delimiters
-  special = "#C678DD",      -- Vibrant purple for special chars
+  delimiter = "#B89A5F",    -- Muted amber for delimiters
+  special = "#E5C07B",      -- Golden yellow for special chars
 
   -- UI elements
-  pmenu_bg = "#262626",
-  pmenu_sel_bg = "#3A3A3A",
-  pmenu_sel_fg = "#C5C8C6",
-  float_bg = "#1C1C1C",
+  pmenu_bg = "#1A1A1A",
+  pmenu_sel_bg = "#2A2A2A",
+  pmenu_sel_fg = "#E5C07B",
+  float_bg = "#0D0D0D",
   float_border = "#555555",
 
   -- Terminal colors (ANSI)
-  terminal_black = "#1E1E1E",
+  terminal_black = "#0D0D0D",
   terminal_red = "#E06C75",
   terminal_green = "#98C379",
   terminal_yellow = "#E5C07B",
