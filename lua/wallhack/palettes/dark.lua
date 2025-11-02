@@ -6,88 +6,88 @@ M.colors = {
   black = "#000000",
   white = "#FFFFFF",
 
-  -- Fluorescent accents
-  fl_red = "#FF0000",
-  fl_green = "#00FF00",
-  fl_blue = "#0000FF",
-  fl_cyan = "#00FFFF",
-  fl_magenta = "#FF00FF",
-  fl_yellow = "#FFFF00",
-  fl_orange = "#FF6600",
+  -- Fluorescent accents (toned down for readability)
+  fl_red = "#E63946",
+  fl_green = "#06FFA5",
+  fl_blue = "#4D96FF",
+  fl_cyan = "#00D9FF",
+  fl_magenta = "#D946EF",
+  fl_yellow = "#FFD60A",
+  fl_orange = "#FF8C42",
 
   -- Muted base colors
   maroon = "#660000",
   green = "#00A645",
-  blue = "#000066",
-  cyan = "#006666",
-  magenta = "#660066",
-  yellow = "#FFBF00",
-  olive = "#666600",
+  blue = "#1A3A52",
+  cyan = "#0A7E8C",
+  magenta = "#8B4789",
+  yellow = "#D4A017",
+  olive = "#9A8B4F",
   gray = "#999999",
-  dark_gray = "#333333",
+  dark_gray = "#1A1A1A",
 
   -- Semantic UI colors
-  bg = "#000000",
-  fg = "#FFBF00",
+  bg = "#0A0A0A",
+  fg = "#D4A017",
 
   -- Editor elements
-  bg_highlight = "#0000FF",
-  bg_visual = "#000066",
-  fg_visual = "#006666",
+  bg_highlight = "#1A2332",
+  bg_visual = "#1A3A52",
+  fg_visual = "#00D9FF",
 
   -- Gutter & UI
-  line_nr = "#FF6600",
-  cursor_line_nr = "#FFFF00",
-  cursor = "#00A645",
+  line_nr = "#6B6B6B",
+  cursor_line_nr = "#D4A017",
+  cursor = "#06FFA5",
 
   -- Git colors
-  git_add = "#00FF00",
-  git_change = "#FFFF00",
-  git_delete = "#FF0000",
-  git_text = "#00FFFF",
+  git_add = "#06FFA5",
+  git_change = "#FFD60A",
+  git_delete = "#E63946",
+  git_text = "#00D9FF",
 
   -- Diagnostic colors
-  error = "#FF0000",
-  warning = "#FFFF00",
-  info = "#00FFFF",
-  hint = "#00FF00",
+  error = "#E63946",
+  warning = "#FFD60A",
+  info = "#00D9FF",
+  hint = "#06FFA5",
 
   -- Syntax highlighting
-  keyword = "#FF00FF",      -- Magenta for keywords
-  func = "#00FFFF",         -- Cyan for functions
-  string = "#00FF00",       -- Green for strings
-  number = "#FF6600",       -- Orange for numbers
-  comment = "#999999",      -- Gray for comments
-  type = "#FFFF00",         -- Yellow for types
-  variable = "#FFBF00",     -- Gold for variables
-  operator = "#FFFFFF",     -- White for operators
-  constant = "#FF0000",     -- Red for constants
-  delimiter = "#666600",    -- Olive for delimiters
-  special = "#FF00FF",      -- Magenta for special chars
+  keyword = "#D946EF",      -- Magenta for keywords
+  func = "#00D9FF",         -- Cyan for functions
+  string = "#06FFA5",       -- Green for strings
+  number = "#FF8C42",       -- Orange for numbers
+  comment = "#6B6B6B",      -- Dimmed gray for comments
+  type = "#FFD60A",         -- Yellow for types
+  variable = "#D4A017",     -- Gold for variables
+  operator = "#CCCCCC",     -- Softer white for operators
+  constant = "#E63946",     -- Red for constants
+  delimiter = "#9A8B4F",    -- Olive for delimiters
+  special = "#D946EF",      -- Magenta for special chars
 
   -- UI elements
-  pmenu_bg = "#000066",
-  pmenu_sel_bg = "#006666",
-  pmenu_sel_fg = "#00FFFF",
-  float_bg = "#000000",
-  float_border = "#666600",
+  pmenu_bg = "#1A1A1A",
+  pmenu_sel_bg = "#1A3A52",
+  pmenu_sel_fg = "#00D9FF",
+  float_bg = "#0A0A0A",
+  float_border = "#9A8B4F",
 
   -- Terminal colors (ANSI)
-  terminal_black = "#000000",
-  terminal_red = "#FF0000",
-  terminal_green = "#00FF00",
-  terminal_yellow = "#FFFF00",
-  terminal_blue = "#0000FF",
-  terminal_magenta = "#FF00FF",
-  terminal_cyan = "#00FFFF",
-  terminal_white = "#FFFFFF",
-  terminal_bright_black = "#999999",
-  terminal_bright_red = "#FF6666",
-  terminal_bright_green = "#66FF66",
-  terminal_bright_yellow = "#FFFF66",
-  terminal_bright_blue = "#6666FF",
-  terminal_bright_magenta = "#FF66FF",
-  terminal_bright_cyan = "#66FFFF",
+  terminal_black = "#0A0A0A",
+  terminal_red = "#E63946",
+  terminal_green = "#06FFA5",
+  terminal_yellow = "#FFD60A",
+  terminal_blue = "#4D96FF",
+  terminal_magenta = "#D946EF",
+  terminal_cyan = "#00D9FF",
+  terminal_white = "#CCCCCC",
+  terminal_bright_black = "#6B6B6B",
+  terminal_bright_red = "#FF6B6B",
+  terminal_bright_green = "#5AFFB0",
+  terminal_bright_yellow = "#FFE066",
+  terminal_bright_blue = "#7DAEFF",
+  terminal_bright_magenta = "#E879F9",
+  terminal_bright_cyan = "#5CE1E6",
   terminal_bright_white = "#FFFFFF",
 }
 
