@@ -1,10 +1,12 @@
 # wallhack.nvim
 
-A vibrant, high-contrast Neovim colorscheme with fluorescent accents on a pure black background. Designed for maximum visibility and retro-terminal aesthetics.
+A minimal, high-contrast Neovim colorscheme with a focused color palette. Available in both dark and light variants, designed for maximum readability and clarity.
 
 ## Features
 
-- Pure black background with vibrant fluorescent colors
+- **Dark and light variants** for different environments
+- **Minimal color palette**: Yellow, blue, red accents with white/gray base
+- **High contrast**: Pure black (#000000) or white (#FFFFFF) backgrounds
 - Comprehensive syntax highlighting for modern code
 - Full Treesitter support
 - Extensive plugin integrations:
@@ -68,7 +70,7 @@ For testing during development, use a local path:
 
 ```lua
 require('wallhack').setup({
-  variant = 'dark', -- 'dark' (light variant coming soon)
+  variant = 'dark', -- 'dark' or 'light'
   transparent_background = false,
   term_colors = true,
   dim_inactive = false,
@@ -105,7 +107,12 @@ require('wallhack').setup({
   color_overrides = {
     dark = {
       bg = '#0a0a0a',
-      fg = '#FFD700',
+      keyword = '#E06C75',
+      -- override any color from the palette
+    },
+    light = {
+      bg = '#FAFAFA',
+      keyword = '#C7254E',
       -- override any color from the palette
     },
   },
@@ -164,38 +171,60 @@ require('lualine').setup({
 
 ## Color Palette
 
-The dark variant features:
+### Dark Variant
 
 - **Background**: Pure black (#000000)
-- **Foreground**: Amber gold (#FFBF00)
-- **Keywords**: Fluorescent magenta (#FF00FF)
-- **Functions**: Fluorescent cyan (#00FFFF)
-- **Strings**: Fluorescent green (#00FF00)
-- **Numbers**: Fluorescent orange (#FF6600)
-- **Comments**: Medium gray (#999999)
-- **Types**: Fluorescent yellow (#FFFF00)
-- **Operators**: White (#FFFFFF)
-- **Constants**: Fluorescent red (#FF0000)
+- **Foreground/Variables**: Bright white (#EFEFEF)
+- **Keywords**: Red (#E06C75) - for def, if, class, return, etc.
+- **Functions**: Yellow (#E5C07B) - for function/method names
+- **Strings/Numbers**: Bright white (#EFEFEF)
+- **Comments**: Gray (#5C6370)
+- **Constants**: Blue (#61AFEF)
+- **Operators/Delimiters**: Gray (#888888)
 
-See `lua/wallhack/palettes/dark.lua` for the complete palette.
+### Light Variant
+
+- **Background**: Pure white (#FFFFFF)
+- **Foreground/Variables**: Dark gray (#1A1A1A)
+- **Keywords**: Red (#C7254E)
+- **Functions**: Dark gold (#B8860B)
+- **Strings/Numbers**: Dark gray (#1A1A1A)
+- **Comments**: Medium gray (#999999)
+- **Constants**: Blue (#0078D4)
+- **Operators/Delimiters**: Gray (#666666)
+
+See `lua/wallhack/palettes/dark.lua` and `lua/wallhack/palettes/light.lua` for complete palettes.
 
 ## Usage
 
 After installation, activate the colorscheme:
 
+### Dark variant:
 ```vim
 :colorscheme wallhack
 ```
 
 Or in your init.lua:
-
 ```lua
 vim.cmd.colorscheme('wallhack')
 ```
 
+### Light variant:
+```vim
+:colorscheme wallhack-light
+```
+
+Or in your init.lua:
+```lua
+require('wallhack').setup({ variant = 'light' })
+vim.cmd.colorscheme('wallhack')
+-- Or simply:
+vim.cmd.colorscheme('wallhack-light')
+```
+
 ## Roadmap
 
-- [ ] Light variant
+- [x] Light variant
 - [ ] More plugin integrations (neo-tree, nvim-tree, etc.)
 - [ ] Additional style presets
 - [ ] Better documentation with screenshots

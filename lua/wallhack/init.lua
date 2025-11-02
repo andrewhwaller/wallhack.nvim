@@ -2,7 +2,7 @@ local M = {}
 
 -- Default configuration
 M.config = {
-  variant = "dark", -- "dark" or "light" (light coming soon)
+  variant = "dark", -- "dark" or "light"
   transparent_background = false,
   term_colors = true,
   dim_inactive = false,

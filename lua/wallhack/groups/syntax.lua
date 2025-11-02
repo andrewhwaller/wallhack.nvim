@@ -46,21 +46,24 @@ function M.get(colors)
     Todo = { fg = colors.bg, bg = colors.warning, style = "bold" },
 
     -- LSP semantic tokens
-    ["@lsp.type.class"] = { fg = colors.type },
+    ["@lsp.type.class"] = { fg = colors.variable },
     ["@lsp.type.decorator"] = { fg = colors.special },
-    ["@lsp.type.enum"] = { fg = colors.type },
+    ["@lsp.type.enum"] = { fg = colors.variable },
     ["@lsp.type.enumMember"] = { fg = colors.constant },
     ["@lsp.type.function"] = { fg = colors.func },
-    ["@lsp.type.interface"] = { fg = colors.type },
+    ["@lsp.type.interface"] = { fg = colors.variable },
     ["@lsp.type.macro"] = { fg = colors.special },
     ["@lsp.type.method"] = { fg = colors.func },
-    ["@lsp.type.namespace"] = { fg = colors.type },
+    ["@lsp.type.namespace"] = { fg = colors.variable },
     ["@lsp.type.parameter"] = { fg = colors.variable },
     ["@lsp.type.property"] = { fg = colors.variable },
-    ["@lsp.type.struct"] = { fg = colors.type },
-    ["@lsp.type.type"] = { fg = colors.type },
-    ["@lsp.type.typeParameter"] = { fg = colors.type },
+    ["@lsp.type.struct"] = { fg = colors.variable },
+    ["@lsp.type.type"] = { fg = colors.variable },
+    ["@lsp.type.typeParameter"] = { fg = colors.variable },
     ["@lsp.type.variable"] = { fg = colors.variable },
+
+    -- hlargs plugin (highlights function arguments)
+    Hlargs = { fg = colors.variable },
   }
 end
 

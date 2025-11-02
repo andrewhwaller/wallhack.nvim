@@ -7,6 +7,7 @@ function M.get(colors)
     ["@variable.builtin"] = { fg = colors.constant },
     ["@variable.parameter"] = { fg = colors.variable },
     ["@variable.member"] = { fg = colors.variable },
+    ["@parameter"] = { fg = colors.variable },
 
     -- Constants
     ["@constant"] = { fg = colors.constant },
